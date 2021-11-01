@@ -1,4 +1,4 @@
-# 项目介绍
+# 基于React的仿网易云音乐web开发实战
 
 ## 技术栈
 
@@ -9,6 +9,26 @@
 - ant design
 - immutable+redux-immutable
 - styled-components
+
+
+
+## 页面功能展示
+
+### 首页组件展示
+
+<img src="https://media.giphy.com/media/sFvcGBfwJnhysy54Xw/giphy.gif" alt="show"/>
+
+### 歌曲搜索
+
+<img src="https://media.giphy.com/media/Yoo3kcPmq6lRWeYiB3/giphy.gif" alt="show"/>
+
+### 歌曲详情页
+
+<img src="https://media.giphy.com/media/rBnCzmF7GhEQJkaVXz/giphy.gif" alt="show"/>
+
+### 排行榜
+
+<img src="https://media.giphy.com/media/LUfEdkRbMCU9bDe31Q/giphy.gif" alt="show"/>
 
 
 
@@ -221,6 +241,8 @@ export default createStore(
 
 
 
+
+
 # 从网易云音乐接口获取数据的流程
 
 - 调用后端路由以请求数据
@@ -289,6 +311,8 @@ export default reducer;
 
 
 
+
+
 # 路由设计
 
 使用集中式路径映射表工具 `react-router-config` 管理路由，形成 `path` 与组件之间的映射关系，并通过 `lazy()` 对组件进行懒加载和渲染。对于有分级路由的组件，在其内部也需要使用 `renderRoutes` 对 `route` 进行包裹。
@@ -334,6 +358,8 @@ export default memo(Search);
 - `a`	
 - `Link`	
 - `Navlink`	
+
+
 
 
 
