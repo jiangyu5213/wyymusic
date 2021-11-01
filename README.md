@@ -1,6 +1,8 @@
 # 基于React的仿网易云音乐web开发实战
 
-## 技术栈
+## 项目介绍
+
+### 技术栈
 
 - react
 - react-router
@@ -12,21 +14,21 @@
 
 
 
-## 页面功能展示
+### 页面功能展示
 
-### 首页组件展示
+#### 首页组件展示
 
 <img src="https://media.giphy.com/media/sFvcGBfwJnhysy54Xw/giphy.gif" alt="show"/>
 
-### 歌曲搜索
+#### 歌曲搜索
 
 <img src="https://media.giphy.com/media/Yoo3kcPmq6lRWeYiB3/giphy.gif" alt="show"/>
 
-### 歌曲详情页
+#### 歌曲详情页
 
 <img src="https://media.giphy.com/media/rBnCzmF7GhEQJkaVXz/giphy.gif" alt="show"/>
 
-### 排行榜
+#### 排行榜
 
 <img src="https://media.giphy.com/media/LUfEdkRbMCU9bDe31Q/giphy.gif" alt="show"/>
 
@@ -217,9 +219,9 @@ export default createStore(
 
 
 
-# 组件代码编写顺序
+## 组件代码编写顺序
 
-## 导入
+### 导入
 
 - hooks
 - router
@@ -230,7 +232,7 @@ export default createStore(
 
 
 
-## 组件代码
+### 组件代码
 
 - 组件内部 state
 - 用于获取 state 的 hooks 代码（如 useSelector(); shallowEqual）以及设置ref 的 hooks 代码（useRef()）
@@ -243,7 +245,7 @@ export default createStore(
 
 
 
-# 从网易云音乐接口获取数据的流程
+## 从网易云音乐接口获取数据的流程
 
 - 调用后端路由以请求数据
 - 并 `dispatch` 给 `action`
@@ -313,7 +315,7 @@ export default reducer;
 
 
 
-# 路由设计
+## 路由设计
 
 使用集中式路径映射表工具 `react-router-config` 管理路由，形成 `path` 与组件之间的映射关系，并通过 `lazy()` 对组件进行懒加载和渲染。对于有分级路由的组件，在其内部也需要使用 `renderRoutes` 对 `route` 进行包裹。
 
@@ -353,7 +355,7 @@ export default memo(Search);
 
 
 
-## 标签选择
+### 标签选择
 
 - `a`	
 - `Link`	
@@ -363,7 +365,7 @@ export default memo(Search);
 
 
 
-# 问题的发现和解决
+## 问题的发现和解决
 
 问题：在组件 `style.js` 中获取 `assets` 中的图片但图片不显示
 
@@ -409,7 +411,7 @@ export const BannerRight = styled.a.attrs({
 
 
 
-# 可改进的地方
+## 可改进的地方
 
 在 `actionCreator.js` 中可以根据 `action` 的功能、是否需要导出、是否用于请求网络数据等进行划分
 
